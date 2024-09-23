@@ -201,17 +201,24 @@ p {
     justify-content: center;
 }
 
-/* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media (min-width: 900px) {
-    .description1  {
-        font-size: 16px;
+/* Ajustes para dispositivos móveis */
+@media (max-width: 600px) {
+    .description1 {
+        font-size: 12px;
     }
 }
 
-/* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media (max-width: 900px) {
-    .description1  {
-        font-size: 12px;
+/* Ajustes para tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .description1 {
+        font-size: 14px;
+    }
+}
+
+/* Ajustes para desktops */
+@media (min-width: 1025px) {
+    .description1 {
+        font-size: 16px;
     }
 }
 
