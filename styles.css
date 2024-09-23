@@ -158,27 +158,6 @@ p {
     }
 }
 
-
-.container {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-
-/* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media (min-width: 1000px) {
-    .container  {
-        width: 40%;
-        margin: 2%;
-    }
-}
-
-/* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media (max-width: 1000px) {
-    .container  {
-        margin: 5%;
-    }
-}
-
 .graybox {
     background-color: #111;
     border-radius: 15px;
@@ -199,14 +178,14 @@ p {
 }
 
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
     .title  {
         font-size: larger;
     }
 }
 
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
     .title  {
         font-size: medium;
     }
@@ -223,14 +202,14 @@ p {
 }
 
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
     .description1  {
         font-size: 16px;
     }
 }
 
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
     .description1  {
         font-size: 12px;
     }
@@ -263,14 +242,14 @@ p {
 }
 
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
     .social-btn  {
         font-size: large;
     }
 }
 
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
     .social-btn  {
         font-size: small;
     }
