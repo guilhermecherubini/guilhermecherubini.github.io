@@ -115,7 +115,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: 100vh;
     text-align: center;
 }
 
@@ -129,33 +128,32 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media (max-width: 800px) {
+@media (min-width: 1000px) {
     .container  {
+        width: 40%;
         margin: 2%;
     }
 }
 
-
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media (min-width: 800px) {
+@media (max-width: 1000px) {
     .container  {
-        width: 27%;
-        padding: 2%;
+        margin: 5%;
     }
 }
 
 .graybox {
     background-color: #111;
     border-radius: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 4%;
+    padding-bottom: 4%;
     padding-left: 12%;
     padding-right: 12%;
 }
 
 .title {
-    margin-top: 0px;
     font-size: medium;
     margin-bottom: 15px;
     color: white;
@@ -166,17 +164,16 @@ p {
 }
 
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media (max-width: 800px) {
+@media (min-width: 1000px) {
     .title  {
-        font-size: medium;
+        font-size: larger;
     }
 }
 
-
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media (min-width: 800px) {
+@media (max-width: 1000px) {
     .title  {
-        font-size: larger;
+        font-size: medium;
     }
 }
 
@@ -191,17 +188,16 @@ p {
 }
 
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media (max-width: 800px) {
+@media (min-width: 1000px) {
     .description1  {
-        font-size: 12px;
+        font-size: 16px;
     }
 }
 
-
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media (min-width: 800px) {
+@media (max-width: 1000px) {
     .description1  {
-        font-size: 16px;
+        font-size: 12px;
     }
 }
 
@@ -232,19 +228,21 @@ p {
 }
 
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media (max-width: 800px) {
+@media (min-width: 1000px) {
+    .social-btn  {
+        font-size: large;
+    }
+}
+
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 1000px) {
     .social-btn  {
         font-size: small;
     }
 }
 
 
-/* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media (min-width: 800px) {
-    .social-btn  {
-        font-size: large;
-    }
-}
 
 
 .social-btn img {
