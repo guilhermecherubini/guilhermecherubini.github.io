@@ -148,7 +148,7 @@ p {
 .graybox {
     background-color: #111;
     border-radius: 15px;
-    padding: 8%;
+    padding: 12%;
 }
 
 .title {
@@ -202,55 +202,121 @@ p {
     }
 }
 
-.description2 {
-    color: #fff0e6;
-    font-size: 12px;
-}
 
-.spotify-button {
-    display: inline-block;
-    background-color: #1DB954;
-    color: white;
-    padding: 11px 15px;
-    font-size: 18px;
-    border-radius: 18px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, transform 0.3s;
-    position: relative;
-    overflow: hidden;
+.social-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
     margin-top: 15px;
 }
-.spotify-button:hover {
-    background-color: #1ed760;
+
+.social-btn {
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 800px) {
+    .social-btn  {
+        font-size: small;
+    }
+}
+
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (min-width: 800px) {
+    .social-btn  {
+        font-size: large;
+    }
+}
+
+
+.social-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.spotify {
+    background-color: #1DB954;
+}
+
+.spotify:hover {
+    background-color: #1aa34a;
     transform: scale(1.05);
 }
-.spotify-button:active {
-    background-color: #1aa34a;
-}
-.spotify-button img {
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    transform: translateY(-50%);
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-.spotify-button span {
-    margin-left: 45px;
-    display: inline-block;
-    vertical-align: middle;
+
+.apple-music {
+    background-color: #FA233B;
 }
 
-
-.sendyourmusiclabel{
-    font-size: 12px;
-    color: #fff0e6;
-    text-decoration: none; /* no underline */
+.apple-music:hover {
+    background-color: #d92031;
+    transform: scale(1.05);
 }
 
-.sendyourmusiclabel:hover {
-    color: #FF532B;
+.youtube-music {
+    background-color: #FF0000;
+}
+
+.youtube-music:hover {
+    background-color: #cc0000;
+    transform: scale(1.05);
+}
+
+.deezer {
+    background-color: #EF5466;
+}
+
+.deezer:hover {
+    background-color: #db4758;
+    transform: scale(1.05);
+}
+
+.tidal {
+    background-color: #000000;
+}
+
+.tidal:hover {
+    background-color: #333333;
+    transform: scale(1.05);
+}
+
+.amazon-music {
+    background-color: #4890a4;
+}
+
+.amazon-music:hover {
+    background-color: #2a5460;
+    transform: scale(1.05);
+}
+
+.soundcloud {
+    background-color: #FF5500;
+}
+
+.soundcloud:hover {
+    background-color: #e64d00;
+    transform: scale(1.05);
+}
+
+.bandcamp {
+    background-color: #408294;
+}
+
+.bandcamp:hover {
+    background-color: #35717d;
     transform: scale(1.05);
 }
