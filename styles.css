@@ -148,7 +148,10 @@ p {
 .graybox {
     background-color: #111;
     border-radius: 15px;
-    padding: 12%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12%;
+    padding-right: 12%;
 }
 
 .title {
@@ -277,16 +280,16 @@ p {
 }
 
 .deezer {
-    background-color: #EF5466;
+    background-color: #a53dff;
 }
 
 .deezer:hover {
-    background-color: #db4758;
+    background-color: #7e00ec;
     transform: scale(1.05);
 }
 
 .tidal {
-    background-color: #000000;
+    background-color: #040404;
 }
 
 .tidal:hover {
@@ -295,7 +298,7 @@ p {
 }
 
 .amazon-music {
-    background-color: #4890a4;
+    background-color: #24abb8;
 }
 
 .amazon-music:hover {
