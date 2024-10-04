@@ -191,10 +191,11 @@ p {
     }
 }
 
-.imagelevitate {
+.imagecover {
     width: 100%;
     border-radius: 15px;
 }
+
 .description1 {
     color: #fff;
     display: flex;
@@ -228,15 +229,12 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
     margin-top: 15px;
 }
 
 .social-btn {
     text-decoration: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 15px;
     color: white;
     font-weight: bold;
     display: flex;
@@ -245,20 +243,25 @@ p {
     gap: 10px;
     transition: background-color 0.3s ease;
     width: 100%;
-    
 }
 
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
 @media (min-width: 900px) {
     .social-btn  {
-        font-size: large;
+        font-size: medium;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 10px;
     }
 }
 
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
 @media (max-width: 900px) {
     .social-btn  {
-        font-size: small;
+        font-size: 12px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        border-radius: 8px;
     }
 }
 
@@ -269,7 +272,7 @@ p {
 }
 
 .spotify {
-    background-color: #1DB954;
+    background-color: #3f3f3f;
 }
 
 .spotify:hover {
@@ -278,7 +281,7 @@ p {
 }
 
 .apple-music {
-    background-color: #FA233B;
+    background-color: #3f3f3f;
 }
 
 .apple-music:hover {
@@ -287,7 +290,7 @@ p {
 }
 
 .youtube-music {
-    background-color: #FF0000;
+    background-color: #3f3f3f;
 }
 
 .youtube-music:hover {
@@ -296,7 +299,7 @@ p {
 }
 
 .deezer {
-    background-color: #a53dff;
+    background-color: #3f3f3f;
 }
 
 .deezer:hover {
@@ -305,7 +308,7 @@ p {
 }
 
 .tidal {
-    background-color: #040404;
+    background-color: #3f3f3f;
 }
 
 .tidal:hover {
@@ -314,7 +317,7 @@ p {
 }
 
 .amazon-music {
-    background-color: #24abb8;
+    background-color: #3f3f3f;
 }
 
 .amazon-music:hover {
@@ -323,7 +326,7 @@ p {
 }
 
 .soundcloud {
-    background-color: #FF5500;
+    background-color: #3f3f3f;
 }
 
 .soundcloud:hover {
@@ -332,7 +335,7 @@ p {
 }
 
 .bandcamp {
-    background-color: #408294;
+    background-color: #3f3f3f;
 }
 
 .bandcamp:hover {
