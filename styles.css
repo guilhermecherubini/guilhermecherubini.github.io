@@ -162,7 +162,7 @@ p {
     background-color: #111;
     border-radius: 15px;
     padding-top: 4%;
-    padding-bottom: 4%;
+    padding-bottom: 6%;
     padding-left: 11%;
     padding-right: 11%;
 }
@@ -219,7 +219,7 @@ p {
 /* Ajustes para desktops */
 @media (min-width: 1025px) {
     .description1 {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 
