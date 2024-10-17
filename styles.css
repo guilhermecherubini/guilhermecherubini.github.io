@@ -236,7 +236,6 @@ p {
 .social-btn {
     text-decoration: none;
     color: white;
-    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -248,7 +247,7 @@ p {
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
 @media (min-width: 900px) {
     .social-btn  {
-        font-size: medium;
+        font-size: 14px;
         padding-top: 10px;
         padding-bottom: 10px;
         border-radius: 10px;
