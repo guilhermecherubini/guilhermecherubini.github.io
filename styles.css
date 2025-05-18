@@ -1,343 +1,237 @@
-.poppins-thin {
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: normal;
+:root {
+  --bg-color: #000;
+  --text-color: #f2f2f2;
+  --accent-color: #8a55c7; /* Roxo usado no hover */
+  --secondary-color: #1c1c1e;
+  --link-hover: #a678e0; /* roxo claro para hover de texto */
+  --shadow-hover: rgba(138, 85, 199, 0.7);
 }
 
-.poppins-extralight {
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-}
-
-.poppins-light {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.poppins-regular {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.poppins-medium {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.poppins-semibold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-}
-
-.poppins-bold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.poppins-extrabold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-}
-
-.poppins-black {
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-}
-
-.poppins-thin-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-}
-
-.poppins-extralight-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: italic;
-}
-
-.poppins-light-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-}
-
-.poppins-regular-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-}
-
-.poppins-medium-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-}
-
-.poppins-semibold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: italic;
-}
-
-.poppins-bold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-}
-
-.poppins-extrabold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 800;
-    font-style: italic;
-}
-
-.poppins-black-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    font-style: italic;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Poppins', serif;
-    margin: 0;
-    padding: 0;
-    background-color: #000;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    text-align: center;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
-p {
-    margin-top:10px;
-    margin-bottom: 0px;
-    padding: 0;
+header {
+  background-color: var(--secondary-color);
+  padding: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--accent-color);
 }
 
-.main-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%; /* Porcentagem inicial */
-    margin: 0 auto;
-    border-radius: 8px;
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
-/* Ajustes para dispositivos móveis */
+.profile-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+section {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.about {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.discography {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
 @media (max-width: 600px) {
-    .main-div {
-        width: 100%; /* Aumenta a largura em telas pequenas */
-        padding: 5%;
-    }
+  .discography {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
 }
 
-/* Ajustes para tablets */
-@media (min-width: 601px) and (max-width: 1024px) {
-    .main-div {
-        width: 80%;
-        padding: 4%;
-    }
+.release {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Ajustes para desktops */
-@media (min-width: 1025px) {
-    .main-div {
-        width: 35%; /* Reduz a largura em telas maiores */
-        padding: 1%;
-    }
+.release-title {
+  margin-bottom: 0.5rem;
+  color: var(--accent-color);
+  font-weight: 600;
+  transition: color 0.3s ease;
+  cursor: default;
 }
 
-.graybox {
-    background-color: #111;
-    border-radius: 15px;
-    padding-top: 4%;
-    padding-bottom: 6%;
-    padding-left: 11%;
-    padding-right: 11%;
+.release a img {
+  width: 100%;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 8px rgba(106, 51, 163, 0.3);
 }
 
-.title {
-    font-size: medium;
-    margin-bottom: 15px;
-    color: white;
+.release a:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px var(--shadow-hover);
 }
 
-.song_info_section{
-    margin-top: 10px;
+iframe {
+  width: 100%;
+  border: none;
+  margin-top: 2rem;
+  border-radius: 12px;
+  display: block;
 }
 
-/* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media (min-width: 900px) {
-    .title  {
-        font-size: larger;
-    }
+.links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
-/* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media (max-width: 900px) {
-    .title  {
-        font-size: medium;
-    }
+.links a {
+  background-color: transparent;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 8px rgba(106, 51, 163, 0.3);
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: transparent;
+  overflow: hidden;
+  cursor: pointer;
 }
 
-.imagecover {
-    width: 100%;
-    border-radius: 15px;
+.links a img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+  transition: filter 0.3s ease;
+  filter: grayscale(0.3);
 }
 
-.description1 {
-    color: #fff;
-    display: flex;
-    justify-content: center;
+.links a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px var(--shadow-hover);
+  background-color: transparent;
 }
 
-/* Ajustes para dispositivos móveis */
-@media (max-width: 600px) {
-    .description1 {
-        font-size: 12px;
-    }
+.links a:hover img {
+  filter: grayscale(0);
 }
 
-/* Ajustes para tablets */
-@media (min-width: 601px) and (max-width: 1024px) {
-    .description1 {
-        font-size: 14px;
-    }
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--secondary-color);
+  color: #aaa;
 }
 
-/* Ajustes para desktops */
-@media (min-width: 1025px) {
-    .description1 {
-        font-size: 14px;
-    }
+footer a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-
-.social-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 15px;
+footer a:hover {
+  color: var(--link-hover);
 }
 
-.social-btn {
-    text-decoration: none;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    transition: background-color 0.3s ease;
-    width: 100%;
+@media (max-width: 768px) {
+  header {
+    font-size: 1.5rem;
+    padding: 1.5rem 1rem;
+  }
+
+  section {
+    padding: 1.5rem 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .about {
+    font-size: 1rem;
+  }
+
+  .links a {
+    box-shadow: 0 0 8px rgba(106, 51, 163, 0.3);
+  }
 }
 
-/* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media (min-width: 900px) {
-    .social-btn  {
-        font-size: 14px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        border-radius: 10px;
-    }
+.linktree-section {
+  padding: 2rem 1rem;
+  text-align: center;
 }
 
-/* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media (max-width: 900px) {
-    .social-btn  {
-        font-size: 12px;
-        padding-top: 7px;
-        padding-bottom: 7px;
-        border-radius: 8px;
-    }
+.linktree-section h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent-color);
 }
 
-
-.social-btn img {
-    width: 20px;
-    height: 20px;
+.linktree-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: auto;
 }
 
-.spotify {
-    background-color: #3f3f3f;
+.linktree-buttons a {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 0.9rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(138, 85, 199, 0.15);
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
-.spotify:hover {
-    background-color: #1aa34a;
-    transform: scale(1.05);
-}
-
-.apple-music {
-    background-color: #3f3f3f;
-}
-
-.apple-music:hover {
-    background-color: #d92031;
-    transform: scale(1.05);
-}
-
-.youtube-music {
-    background-color: #3f3f3f;
-}
-
-.youtube-music:hover {
-    background-color: #cc0000;
-    transform: scale(1.05);
-}
-
-.deezer {
-    background-color: #3f3f3f;
-}
-
-.deezer:hover {
-    background-color: #7e00ec;
-    transform: scale(1.05);
-}
-
-.tidal {
-    background-color: #3f3f3f;
-}
-
-.tidal:hover {
-    background-color: #333333;
-    transform: scale(1.05);
-}
-
-.amazon-music {
-    background-color: #3f3f3f;
-}
-
-.amazon-music:hover {
-    background-color: #2a5460;
-    transform: scale(1.05);
-}
-
-.soundcloud {
-    background-color: #3f3f3f;
-}
-
-.soundcloud:hover {
-    background-color: #e64d00;
-    transform: scale(1.05);
-}
-
-.bandcamp {
-    background-color: #3f3f3f;
-}
-
-.bandcamp:hover {
-    background-color: #35717d;
-    transform: scale(1.05);
+.linktree-buttons a:hover {
+  background-color: var(--accent-color);
+  color: #fff;
+  transform: scale(1.03);
+  box-shadow: 0 0 15px var(--shadow-hover);
 }

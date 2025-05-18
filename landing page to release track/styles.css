@@ -1,0 +1,343 @@
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+body {
+    font-family: 'Poppins', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+}
+
+p {
+    margin-top:10px;
+    margin-bottom: 0px;
+    padding: 0;
+}
+
+.main-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Porcentagem inicial */
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 600px) {
+    .main-div {
+        width: 100%; /* Aumenta a largura em telas pequenas */
+        padding: 5%;
+    }
+}
+
+/* Ajustes para tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .main-div {
+        width: 80%;
+        padding: 4%;
+    }
+}
+
+/* Ajustes para desktops */
+@media (min-width: 1025px) {
+    .main-div {
+        width: 35%; /* Reduz a largura em telas maiores */
+        padding: 1%;
+    }
+}
+
+.graybox {
+    background-color: #111;
+    border-radius: 15px;
+    padding-top: 4%;
+    padding-bottom: 6%;
+    padding-left: 11%;
+    padding-right: 11%;
+}
+
+.title {
+    font-size: medium;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.song_info_section{
+    margin-top: 10px;
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (min-width: 900px) {
+    .title  {
+        font-size: larger;
+    }
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 900px) {
+    .title  {
+        font-size: medium;
+    }
+}
+
+.imagecover {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.description1 {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 600px) {
+    .description1 {
+        font-size: 12px;
+    }
+}
+
+/* Ajustes para tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .description1 {
+        font-size: 14px;
+    }
+}
+
+/* Ajustes para desktops */
+@media (min-width: 1025px) {
+    .description1 {
+        font-size: 14px;
+    }
+}
+
+
+.social-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.social-btn {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (min-width: 900px) {
+    .social-btn  {
+        font-size: 14px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 10px;
+    }
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 900px) {
+    .social-btn  {
+        font-size: 12px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        border-radius: 8px;
+    }
+}
+
+
+.social-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.spotify {
+    background-color: #3f3f3f;
+}
+
+.spotify:hover {
+    background-color: #1aa34a;
+    transform: scale(1.05);
+}
+
+.apple-music {
+    background-color: #3f3f3f;
+}
+
+.apple-music:hover {
+    background-color: #d92031;
+    transform: scale(1.05);
+}
+
+.youtube-music {
+    background-color: #3f3f3f;
+}
+
+.youtube-music:hover {
+    background-color: #cc0000;
+    transform: scale(1.05);
+}
+
+.deezer {
+    background-color: #3f3f3f;
+}
+
+.deezer:hover {
+    background-color: #7e00ec;
+    transform: scale(1.05);
+}
+
+.tidal {
+    background-color: #3f3f3f;
+}
+
+.tidal:hover {
+    background-color: #333333;
+    transform: scale(1.05);
+}
+
+.amazon-music {
+    background-color: #3f3f3f;
+}
+
+.amazon-music:hover {
+    background-color: #2a5460;
+    transform: scale(1.05);
+}
+
+.soundcloud {
+    background-color: #3f3f3f;
+}
+
+.soundcloud:hover {
+    background-color: #e64d00;
+    transform: scale(1.05);
+}
+
+.bandcamp {
+    background-color: #3f3f3f;
+}
+
+.bandcamp:hover {
+    background-color: #35717d;
+    transform: scale(1.05);
+}
