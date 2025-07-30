@@ -1,13 +1,12 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-  <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DRHHQX7R02"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag() { dataLayer.push(arguments); }
       gtag('js', new Date());
-
       gtag('config', 'G-DRHHQX7R02');
     </script>
 
@@ -37,7 +36,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
+    <script>
+      /**
+       *   The following event is sent when the page loads. You could
+       *   wrap the event in a JavaScript function so the event is
+       *   sent when the user performs some action.
+       */
+      gtag('event', 'screen_view', {
+        'screen_name': 'Guilherme Cherubini Landing Page'
+      });
+    </script>
 
     <!-- MENU -->
     <header>
@@ -51,24 +61,24 @@
       </nav>
     </header>
 
-
-
     <!-- ABOUT -->
     <section id="about">
       <div class="about">
         <img class="about-image" src="imgs/1-sat.png" alt="Foto de Guilherme Cherubini" />
         <div class="about-text">
           <div class="artist-title">GUILHERME CHERUBINI</div>
-          <p>
-            Music artist, composer, and founder of Addiction 21 Records.
-          </p>
+          <p>Music artist, composer, and founder of Addiction 21 Records.</p>
           <p>
             Guilherme kicks off a new season with releases on prominent labels, leading a journey marked by electric and acidic tones, exploring minimal, electro and deep tech from the underground and independent electronic scene.
           </p>
           <div class="cta-container">
-            <a href="https://open.spotify.com/album/3QtCVGEjTKQqTNgUNhuIsz" 
-               class="cta-button pulse" 
-               target="_blank">
+            <a 
+              onclick="gtag('event', 'cta_addicast_023', {
+                'screen_name': 'Guilherme Cherubini Landing Page'
+              });"
+              href="https://open.spotify.com/album/3QtCVGEjTKQqTNgUNhuIsz" 
+              class="cta-button pulse" 
+              target="_blank">
               Listen to Addicast #023 on SoundCloud
             </a>
           </div>
@@ -76,119 +86,107 @@
       </div>
     </section>
 
-
-
     <!-- DISCOGRAPHY -->
     <section id="discography" class="discography-section">
       <h1>discography.</h1>
       <div class="discography">
+        <!-- Cada release com evento GA4 -->
         <div class="release">
-          <a href="https://open.spotify.com/album/3QtCVGEjTKQqTNgUNhuIsz" target="_blank" rel="noopener noreferrer">
+          <a onclick="gtag('event', 'discography_contact', { 'screen_name': 'Guilherme Cherubini Landing Page' });"
+             href="https://open.spotify.com/album/3QtCVGEjTKQqTNgUNhuIsz" target="_blank" rel="noopener noreferrer">
             <img src="imgs/cover_contact.jpg" alt="Contact EP - Guilherme Cherubini - Sintoniza Records" />
           </a>
         </div>
         <div class="release">
-          <a href="https://open.spotify.com/track/4G5yLddEaICXiZiuWdi8BL" target="_blank" rel="noopener noreferrer">
+          <a onclick="gtag('event', 'discography_deeejay', { 'screen_name': 'Guilherme Cherubini Landing Page' });"
+             href="https://open.spotify.com/track/4G5yLddEaICXiZiuWdi8BL" target="_blank" rel="noopener noreferrer">
             <img src="imgs/cover_deeejay.jpg" alt="Deeejay EP - Guilherme Cherubini - Addiction 21 Records" />
           </a>
         </div>
         <div class="release">
-          <a href="https://open.spotify.com/album/3TvdUdDpH1gBvRqj0kiJRv" target="_blank" rel="noopener noreferrer">
+          <a onclick="gtag('event', 'discography_la_odyssey', { 'screen_name': 'Guilherme Cherubini Landing Page' });"
+             href="https://open.spotify.com/album/3TvdUdDpH1gBvRqj0kiJRv" target="_blank" rel="noopener noreferrer">
             <img src="imgs/cover_witchery.jpg" alt="LA Odyssey EP - Guilherme Cherubini, da lighT - Addiction 21 Records" />
           </a>
         </div>
         <div class="release">
-          <a href="https://soundcloud.com/guilhermecherubini/guilherme-cherubini-ciano-original-mix" target="_blank" rel="noopener noreferrer">
+          <a onclick="gtag('event', 'discography_ciano', { 'screen_name': 'Guilherme Cherubini Landing Page' });"
+             href="https://soundcloud.com/guilhermecherubini/guilherme-cherubini-ciano-original-mix" target="_blank" rel="noopener noreferrer">
             <img src="imgs/cover_ciano.jpg" alt="Ciano Single - Guilherme Cherubini - Addiction 21 Records" />
           </a>
         </div>
         <div class="release">
-          <a href="https://open.spotify.com/album/4Y1OQdFh5M1tb8DJC0mVCM?si=_dG-IHgMQzugzLHvvr4oMw" target="_blank" rel="noopener noreferrer">
+          <a onclick="gtag('event', 'discography_synce', { 'screen_name': 'Guilherme Cherubini Landing Page' });"
+             href="https://open.spotify.com/album/4Y1OQdFh5M1tb8DJC0mVCM?si=_dG-IHgMQzugzLHvvr4oMw" target="_blank" rel="noopener noreferrer">
             <img src="imgs/cover_synce.jpg" alt="Synce VA - Guilherme Cherubini, da lighT" />
           </a>
         </div>
         <div class="release">
-          <!-- <p class="release-title">Dreamer EP</p> -->
-          <a href="https://open.spotify.com/album/1cMGyJix7Iej3OX2bVZuCL?si=HIE3brY1QXWFKFYMk-vqoA" target="_blank" rel="noopener noreferrer">
+          <a onclick="gtag('event', 'discography_dreamer', { 'screen_name': 'Guilherme Cherubini Landing Page' });"
+             href="https://open.spotify.com/album/1cMGyJix7Iej3OX2bVZuCL?si=HIE3brY1QXWFKFYMk-vqoA" target="_blank" rel="noopener noreferrer">
             <img src="imgs/cover_dreamer.jpg" alt="Dreamer EP - Guilherme Cherubini - Addiction 21 Records" />
           </a>
         </div>
         <div class="release">
-          <a href="https://open.spotify.com/album/5vDyP6aqFPR9B5pD5FkXWR?si=OghopH_dR7-jKoH7ozZ6cg" target="_blank" rel="noopener noreferrer">
+          <a onclick="gtag('event', 'discography_levitate', { 'screen_name': 'Guilherme Cherubini Landing Page' });"
+             href="https://open.spotify.com/album/5vDyP6aqFPR9B5pD5FkXWR?si=OghopH_dR7-jKoH7ozZ6cg" target="_blank" rel="noopener noreferrer">
             <img src="imgs/cover_levitate.jpg" alt="Levitate Single - Guilherme Cherubini" />
           </a>
         </div>
         <div class="release">
-          <a href="https://open.spotify.com/album/1rq66HhpslraJRSJdg1dGu?si=NnXQudLWTSeHs5atSg42hA" target="_blank" rel="noopener noreferrer">
+          <a onclick="gtag('event', 'discography_break_away', { 'screen_name': 'Guilherme Cherubini Landing Page' });"
+             href="https://open.spotify.com/album/1rq66HhpslraJRSJdg1dGu?si=NnXQudLWTSeHs5atSg42hA" target="_blank" rel="noopener noreferrer">
             <img src="imgs/cover_break_away.jpg" alt="Break Away - Guiherme Cherubini" />
           </a>
         </div>
       </div>
     </section>
 
-    <!-- LINKS 
-    <section id="links">
-      <h1>links.</h1>
-      <div class="linktree-buttons linktree-section">
-        <a href="https://open.spotify.com/artist/55yYfzuA8IHs7zVBYluIr5" target="_blank">Follow me on Spotify</a>
-        <a href="https://open.spotify.com/album/3QtCVGEjTKQqTNgUNhuIsz" target="_blank">Contact EP from Sintoniza Records</a>
-        <a href="https://soundcloud.com/guilhermecherubini/sets/live-sets-mixtapes" target="_blank">Live mixes and DJ sets</a>
-      </div>
-    </section>-->
-
     <!-- SOCIAL -->
     <section id="contact" aria-label="Redes sociais e plataformas musicais / Social and music platforms">
       <h1>contact.</h1>
-
-      <div class="contact"> 
-       
-        <!--  TESTING IMAGES HERE
+      <div class="contact">
         <div class="social-links">
-            <img class="about-image" src="imgs/1.png" alt="Foto de Guilherme Cherubini" />
-            <img class="about-image" src="imgs/2.png" alt="Foto de Guilherme Cherubini" />
-            <img class="about-image" src="imgs/3.png" alt="Foto de Guilherme Cherubini" />
+          <a onclick="gtag('event', 'social_spotify', { 'screen_name': 'Guilherme Cherubini Landing Page' });"
+             href="https://open.spotify.com/artist/55yYfzuA8IHs7zVBYluIr5" target="_blank" rel="noopener noreferrer" aria-label="Spotify">
+            <img src="imgs/social_spotify.png" alt="Guilherme Cherubini Spotify" />
+          </a>
+          <a onclick="gtag('event', 'social_soundcloud', { 'screen_name': 'Guilherme Cherubini Landing Page' });"
+             href="https://soundcloud.com/guilhermecherubini" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud">
+            <img src="imgs/social_soundcloud.png" alt="Guilherme Cherubini SoundCloud" />
+          </a>
+          <a onclick="gtag('event', 'social_instagram', { 'screen_name': 'Guilherme Cherubini Landing Page' });"
+             href="https://instagram.com/guilhermecherubini" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <img src="imgs/social_instagram.png" alt="Guilherme Cherubini Instagram" />
+          </a>
+          <a onclick="gtag('event', 'social_bandcamp', { 'screen_name': 'Guilherme Cherubini Landing Page' });"
+             href="https://guilhermecherubini.bandcamp.com/" target="_blank" rel="noopener noreferrer" aria-label="Bandcamp">
+            <img src="imgs/social_bandcamp.png" alt="Guilherme Cherubini Bandcamp" />
+          </a>
+          <a onclick="gtag('event', 'social_beatport', { 'screen_name': 'Guilherme Cherubini Landing Page' });"
+             href="https://www.beatport.com/artist/guilherme-cherubini/1168877" target="_blank" rel="noopener noreferrer" aria-label="Beatport">
+            <img src="imgs/social_beatport.png" alt="Guilherme Cherubini Beatport" />
+          </a>
+          <a onclick="gtag('event', 'social_itunes', { 'screen_name': 'Guilherme Cherubini Landing Page' });"
+             href="https://music.apple.com/br/artist/guilherme-cherubini/1717552057" target="_blank" rel="noopener noreferrer" aria-label="iTunes">
+            <img src="imgs/social_itunes.png" alt="Guilherme Cherubini iTunes" />
+          </a>
+          <a onclick="gtag('event', 'social_youtube', { 'screen_name': 'Guilherme Cherubini Landing Page' });"
+             href="https://music.youtube.com/channel/UCdR_FHCVmCTWtgUvSqB9AWg" target="_blank" rel="noopener noreferrer" aria-label="YouTube Music">
+            <img src="imgs/social_youtubemusic.jpg" alt="YouTube Music" />
+          </a>
         </div>
-        -->
-        <div class="social-links">
-        <a href="https://open.spotify.com/artist/55yYfzuA8IHs7zVBYluIr5" target="_blank" rel="noopener noreferrer" aria-label="Spotify">
-          <img src="imgs/social_spotify.png" alt="Guilherme Cherubini Spotify" />
-        </a>
-        <a href="https://soundcloud.com/guilhermecherubini" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud">
-          <img src="imgs/social_soundcloud.png" alt="Guilherme Cherubini SoundCloud" />
-        </a>
-        <a href="https://instagram.com/guilhermecherubini" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-          <img src="imgs/social_instagram.png" alt="Guilherme Cherubini Instagram" />
-        </a>
-        <a href="https://guilhermecherubini.bandcamp.com/" target="_blank" rel="noopener noreferrer" aria-label="Bandcamp">
-          <img src="imgs/social_bandcamp.png" alt="Guilherme Cherubini Bandcamp" />
-        </a>
-        <a href="https://www.beatport.com/artist/guilherme-cherubini/1168877" target="_blank" rel="noopener noreferrer" aria-label="Beatport">
-          <img src="imgs/social_beatport.png" alt="Guilherme Cherubini Beatport" />
-        </a>     
-         <a href="https://music.apple.com/br/artist/guilherme-cherubini/1717552057" target="_blank" rel="noopener noreferrer" aria-label="iTunes">
-           <img src="imgs/social_itunes.png" alt="Guilherme Cherubini iTunes" />
-         </a>
-         <a href="https://music.youtube.com/channel/UCdR_FHCVmCTWtgUvSqB9AWg" target="_blank" rel="noopener noreferrer" aria-label="YouTube Music">
-           <img src="imgs/social_youtubemusic.jpg" alt="YouTube Music" />
-         </a>  
-      </div>  
-       <p>
-        Contact and booking: <a href="mailto:guilhermechmusic@gmail.com">guilhermechmusic@gmail.com</a>
-      </p>
+        <p>
+          Contact and Booking:
+          <a onclick="gtag('event', 'contact_email', { 'screen_name': 'Guilherme Cherubini Landing Page' });"
+             href="mailto:guilhermechmusic@gmail.com">guilhermechmusic@gmail.com</a>
+        </p>
+        <p>
+          Demos to Addiction 21 Records:
+          <a onclick="gtag('event', 'contact_email_addiction', { 'screen_name': 'Guilherme Cherubini Landing Page' });"
+             href="mailto:addictionlabel21@gmail.com">addictionlabel21@gmail.com</a>
+        </p>
       </div>
-
-      
-
     </section>
-
-    <!-- CONTACT 
-    <section id="contact">
-      <h1>contact.</h1>
-
-      <p>
-        Contact and booking: <a href="mailto:guilhermechmusic@gmail.com">guilhermechmusic@gmail.com</a>
-      </p>
-    </section>
-    -->
   </body>
 </html>
