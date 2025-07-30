@@ -66,7 +66,7 @@ nav a:hover {
   gap: 30px; /* espaçamento entre imagem e texto */
 }
 
-.about img {
+.about-image {
   width: 100%;
   max-width: 280px;
   height: auto;
@@ -382,11 +382,12 @@ iframe {
     text-align: center;
   }
 
-  .about img {
+  .about-image {
     width: 250px;
     height: 250px;
     margin-bottom: 1rem;
   }
+
 
   .about-text {
     max-width: 100%;
