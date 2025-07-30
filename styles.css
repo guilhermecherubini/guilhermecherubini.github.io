@@ -15,6 +15,7 @@
 
 h1 {
     font-size: 22px;
+    margin-bottom: 40px;
 }
 
 body {
@@ -25,12 +26,61 @@ body {
 }
 
 header {
-  background-color: var(--secondary-color);
-  padding: 2rem;
-  text-align: center;
-  font-size: 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(8px);
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    color: #ffcb3c;
+}
+
+#about {
+  padding-top:80px;
+}
+
+.about {
+  display: flex;
+  align-items: center; /* alinha verticalmente a imagem com o texto */
+  gap: 30px; /* espaçamento entre imagem e texto */
+}
+
+.about img {
+  width: 250px;       /* tamanho fixo da imagem quadrada */
+  height: 250px;
+  object-fit: cover;  /* mantém a imagem quadrada cortando o excesso */
+  border-radius: 8px; /* cantos levemente arredondados, opcional */
+  flex-shrink: 0;     /* evita que a imagem encolha */
+}
+
+.about-text {
+  max-width: 600px;   /* largura máxima para o texto */
+}
+
+.artist-title {
   font-weight: bold;
-  color: var(--accent-color);
+  font-size: 1.2rem;
+  letter-spacing: 1px;
 }
 
 .profile-header {
@@ -52,6 +102,7 @@ section {
   padding: 2rem 1rem;
   max-width: 1000px;
   margin: auto;
+  padding-top: 80px;
 }
 
 h2 {
@@ -62,7 +113,7 @@ h2 {
 }
 
 .about {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   line-height: 1.8;
 }
 
@@ -179,11 +230,8 @@ footer a:hover {
   color: var(--link-hover);
 }
 
+/* MOBILE */
 @media (max-width: 768px) {
-  header {
-    font-size: 1.5rem;
-    padding: 1.5rem 1rem;
-  }
 
   section {
     padding: 1.5rem 2.5rem;
