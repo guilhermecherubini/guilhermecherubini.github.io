@@ -368,6 +368,15 @@ iframe {
 
 /* MOBILE */
 @media (max-width: 768px) {
+  nav {
+    gap: 15px;
+  }
+
+  .cta-button {
+    font-size: 0.8rem;
+    }
+
+
   .about {
     flex-direction: column;
     align-items: center;
