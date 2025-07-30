@@ -11,6 +11,26 @@
       gtag('config', 'G-DRHHQX7R02');
     </script>
 
+    <!-- Rastreamento automático de cliques em links -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        document.body.addEventListener('click', function (event) {
+          let target = event.target;
+          while (target && target.tagName !== 'A') {
+            target = target.parentElement;
+          }
+
+          if (target && target.tagName === 'A') {
+            gtag('event', 'click', {
+              event_category: 'link',
+              event_label: target.href,
+              transport_type: 'beacon'
+            });
+          }
+        });
+      });
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Guilherme Cherubini</title>
