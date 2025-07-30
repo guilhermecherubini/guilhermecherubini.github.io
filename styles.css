@@ -368,7 +368,7 @@ iframe {
 /* MOBILE */
 @media (max-width: 768px) {
   nav {
-    gap: 10px;
+    gap: 13px;
   }
 
   .cta-button {
