@@ -66,11 +66,13 @@ nav a:hover {
 }
 
 .about img {
-  width: 250px;       /* tamanho fixo da imagem quadrada */
-  height: 250px;
-  object-fit: cover;  /* mantém a imagem quadrada cortando o excesso */
-  border-radius: 8px; /* cantos levemente arredondados, opcional */
-  flex-shrink: 0;     /* evita que a imagem encolha */
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
 }
 
 .about-text {
