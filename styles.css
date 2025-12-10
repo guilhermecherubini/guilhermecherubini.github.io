@@ -62,7 +62,7 @@ nav a:hover {
 
 .about {
   display: flex;
-  align-items: center; /* alinha verticalmente a imagem com o texto */
+  align-items: flex-start; /* alinha verticalmente a imagem com o texto */
   gap: 30px; /* espaçamento entre imagem e texto */
 }
 
