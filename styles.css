@@ -217,6 +217,16 @@ iframe {
   display: block;
 }
 
+#latest-set h1 {
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+
+#latest-set iframe {
+  aspect-ratio: 16 / 9;
+  height: auto;
+}
+
 .links {
   display: flex;
   justify-content: center;
@@ -401,6 +411,10 @@ iframe {
 
   h2 {
     font-size: 1.25rem;
+  }
+
+  #latest-set h1 {
+    font-size: 0.95rem;
   }
 
   .about {
